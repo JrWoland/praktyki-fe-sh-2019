@@ -1,0 +1,20 @@
+body {
+   box-sizing: border-box;
+   // width: 100vw;
+   min-height: 800vh;
+   margin: 0;
+   padding: 0;
+   color: $text-color;
+
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+}
+
+ul,
+li {
+   list-style: none;
+   padding: 0;
+}
