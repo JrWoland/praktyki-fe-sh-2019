@@ -1,0 +1,54 @@
+.hero {
+   display: flex;
+   padding-top: 20px;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 580px;
+   background-color: $bgc-color;
+
+   &__title {
+      background-color: transparent;
+      padding-left: 150px;
+      padding-right: 200px;
+      width: 45%;
+
+      h1 {
+         color: $product-color;
+         font-family: $font-poppins;
+         font-size: 70px;
+         line-height: 60px;
+         letter-spacing: -3px;
+      }
+
+      p {
+         font-family: $font-roboto;
+         font-size: 30px;
+      }
+
+   }
+
+   &__images {
+      position: relative;
+      width: 45%;
+      height: 100%;
+      overflow: hidden;
+
+      img {
+         position: absolute;
+         width: 100%;
+
+         &.desks {
+            width: 600px;
+            bottom: 107px;
+            left: -10px;
+         }
+
+         &.hand {
+            width: 450px;
+            bottom: -28px;
+            left: 35px;
+         }
+      }
+   }
+}

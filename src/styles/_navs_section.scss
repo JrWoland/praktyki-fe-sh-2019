@@ -1,0 +1,120 @@
+.fixed-nav {
+   width: 100%;
+   height: 80px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-family: $font-roboto;
+   background-color: rgb(255, 255, 255);
+   z-index: 2;
+
+   &__mobile {
+      display: none;
+
+      @media (max-width: $phone) {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: $product-color;
+         font-size: 40px;
+         padding-right: 40px;
+
+         &--title {
+            margin: 2px;
+            padding: 0 5px 0 5px;
+            color: black;
+            font-weight: 700;
+            font-size: 20px;
+
+            .fas {
+               padding: 0 15px;
+            }
+         }
+      }
+   }
+
+
+   &__logo {
+      margin-top: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 68px;
+
+   }
+
+   &__menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: $phone) {
+         display: none;
+      }
+
+      .products {
+         margin-top: 50px;
+         display: flex;
+         list-style: none;
+         font-size: 13px;
+         font-family: $font-roboto;
+
+         .product {
+            padding: 0 30px 0 30px;
+
+            &--sign {
+               padding: 0 30px 0 30px;
+               font-size: 17px;
+               font-weight: 700;
+            }
+         }
+
+      }
+
+      .button-sign {
+
+         font-size: 17px;
+
+         button {
+            color: #fff;
+            background-color: $product-color;
+            border: none;
+            padding: 47px 80px 16px 57px;
+            width: 280px;
+            height: 80px;
+         }
+      }
+   }
+}
+
+.work-place-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-top: 80px;
+   font-family: $font-roboto;
+   font-size: 17px;
+   height: 120px;
+
+   @media (max-width: $phone) {
+      display: none;
+   }
+
+   &__menu {
+      display: flex;
+      margin-right: 200px;
+      top: 0;
+      left: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+         display: block;
+         padding: 0 30px 0 30px;
+      }
+   }
+}

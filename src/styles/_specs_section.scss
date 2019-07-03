@@ -1,0 +1,141 @@
+.specs {
+   width: 100%;
+
+   &__head {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__headline {
+      font-family: $font-poppins;
+      font-size: 30px;
+   }
+
+   &__paragraph {
+      font-size: 17px;
+   }
+
+   &__grow {
+      font-weight: 300;
+      margin: 3%;
+      font-family: $font-roboto;
+      display: block;
+      flex-basis: 25%;
+      // flex-grow: 1;
+   }
+
+   &--img {
+      width: 100%;
+      height: 100%;
+   }
+
+   &__accordion {
+      position: relative;
+   }
+
+   &__menu {
+      // position: absolute;
+      margin: 50px auto 150px;
+      width: 70%;
+
+
+      font-family: $font-poppins;
+      font-weight: 700;
+      font-size: 17px;
+
+      .item {
+         border-top: 1px solid $bgc-color;
+         overflow: hidden;
+         padding: 16px;
+
+         &--btn {
+            display: flex;
+            justify-content: space-between;
+
+            &:hover {
+               color: $product-color;
+            }
+         }
+
+         &--icon {
+            font-size: 10px;
+            color: rgb(79, 79, 79);
+            display: block;
+            text-align: right;
+         }
+
+         &:hover .item--sub-menu {
+            max-height: 10em;
+         }
+
+         &--sub-menu {
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.7s;
+
+            &--btn {
+               font-family: $font-roboto;
+               font-weight: 300;
+               font-size: 15px;
+               display: block;
+               padding: 16px;
+               position: relative;
+            }
+         }
+      }
+   }
+
+   &__footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+   }
+
+   &__content {
+      width: 500px;
+      padding: 0 20px 0 20px;
+
+      &--headline {
+         font-family: $font-poppins;
+         font-size: 30px;
+      }
+
+      &--paragraph {
+         font-family: $font-roboto;
+         font-size: 17px;
+         font-weight: 300;
+      }
+   }
+
+   &__download {
+      background-color: $bgc-color;
+      margin: 60px auto;
+      max-width: 1300px;
+      height: 120px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &--btn {
+         @include buttonStyle(200px, 60px);
+
+         &:hover {
+            cursor: pointer;
+            opacity: 0.9;
+         }
+      }
+   }
+
+   &__text {
+      font-family: $font-roboto;
+      font-size: 17px;
+      font-weight: 300;
+
+      &--bold {
+         font-family: $font-poppins;
+         font-size: 19px;
+         font-weight: 700;
+      }
+   }
+}

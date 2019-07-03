@@ -1,0 +1,75 @@
+.for-who {
+  width: 100%;
+  background-color: $bgc-color;
+
+  &__info {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 70%;
+    min-height: 165px;
+
+    &--more {
+      width: 20%;
+
+      h3 {
+        font-size: 30px;
+        font-family: $font-poppins;
+      }
+
+      p {
+        font-size: 170x;
+        font-family: $font-roboto;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+
+    &--item {
+      background-color: #ffffff;
+      max-height: 500px;
+      max-width: 310px;
+      padding-top: 50px;
+      margin: 0 20px 120px;
+
+      @media (max-width: $phone) {
+        display: none;
+      }
+
+      .card-img {
+        width: 160px;
+        height: 137px;
+        background-image: url("/public/img/mob_roblem_solving.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+      }
+
+      .card-content {
+        margin: 40px 25px;
+        width: 75%;
+        padding: 10px;
+
+        h3 {
+          margin-top: 40px;
+          font-family: $font-poppins;
+          font-size: 19px;
+          font-weight: bold;
+
+        }
+
+        p {
+          margin-top: 40px;
+          font-family: $font-roboto;
+          font-size: 17px;
+          font-weight: 300;
+
+        }
+      }
+    }
+  }
+}
