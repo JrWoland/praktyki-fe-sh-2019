@@ -1,54 +1,95 @@
 .hero {
-   display: flex;
-   padding-top: 20px;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-   height: 580px;
-   background-color: $bgc-color;
 
    &__title {
-      background-color: transparent;
-      padding-left: 150px;
-      padding-right: 200px;
-      width: 45%;
+      color: $product-color;
+      font-family: $font-poppins;
+      font-size: 70px;
+      width: 50%;
 
-      h1 {
+      &--headline {
+         font-size: 70px;
+      }
+   }
+
+   &__images {}
+
+   &__paragraph {
+      color: black;
+      padding: 16px;
+      font-size: 20px;
+      line-height: 22px;
+      font-family: $font-roboto;
+
+      .app-btn {
+         display: block;
+         height: 70px;
+         width: 210px;
+         margin: 10px;
+      }
+
+   }
+
+
+   @media (max-width: $phone) {
+
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      flex-direction: column;
+      background: $bgc-color;
+
+      &__title {
+         margin-top: 50px;
+         padding: 20px;
+         width: 80vw;
          color: $product-color;
          font-family: $font-poppins;
-         font-size: 70px;
-         line-height: 60px;
-         letter-spacing: -3px;
+
+         &--headline {
+            font-size: 35px;
+         }
+
       }
 
-      p {
+      &__images {
+         position: relative;
+         width: 100vw;
+         height: 80vw;
+         overflow: hidden;
+
+         &--desks {
+            position: absolute;
+            width: 105%;
+            bottom: -10%;
+
+         }
+
+         &--hand {
+            position: absolute;
+            width: 80%;
+            left: 15%;
+            top: 0%;
+         }
+      }
+
+      &__paragraph {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         color: black;
+         padding: 16px;
+         font-size: 20px;
+         line-height: 22px;
          font-family: $font-roboto;
-         font-size: 30px;
+
+         .app-btn {
+            display: block;
+            width: 150px;
+            margin: 10px;
+         }
+
       }
 
    }
 
-   &__images {
-      position: relative;
-      width: 45%;
-      height: 100%;
-      overflow: hidden;
-
-      img {
-         position: absolute;
-         width: 100%;
-
-         &.desks {
-            width: 600px;
-            bottom: 107px;
-            left: -10px;
-         }
-
-         &.hand {
-            width: 450px;
-            bottom: -28px;
-            left: 35px;
-         }
-      }
-   }
 }
