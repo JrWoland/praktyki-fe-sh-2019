@@ -8,23 +8,55 @@
     top: 0;
     left: 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-family: $font-roboto;
     background-color: rgb(255, 255, 255);
     z-index: 2;
 
+    &__mobile {
+      display: none;
+
+      @media (max-width: $phone) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $product-color;
+        font-size: 40px;
+        padding-right: 40px;
+
+        &--title {
+          margin: 2px;
+          padding: 0 5px 0 5px;
+          color: black;
+          font-weight: 700;
+          font-size: 20px;
+
+          .fas {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+
+
     &__logo {
-      margin-top: 40px;
+      margin-top: 0px;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-left: 68px;
+
     }
 
     &__menu {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: $phone) {
+        display: none;
+      }
 
       .products {
         margin-top: 50px;
@@ -70,6 +102,10 @@
     font-family: $font-roboto;
     font-size: 17px;
     height: 120px;
+
+    @media (max-width: $phone) {
+      display: none;
+    }
 
     &__menu {
       display: flex;
@@ -155,7 +191,7 @@
       &--more {
         width: 20%;
 
-        h2 {
+        h3 {
           font-size: 30px;
           font-family: $font-poppins;
         }
@@ -179,9 +215,13 @@
         padding-top: 50px;
         margin: 0 20px 120px;
 
+        @media (max-width: $phone) {
+          display: none;
+        }
+
         .card-img {
-          height: 137px;
           width: 160px;
+          height: 137px;
           background-image: url("/public/img/mob_roblem_solving.png");
           background-repeat: no-repeat;
           background-size: cover;
@@ -193,7 +233,7 @@
           width: 75%;
           padding: 10px;
 
-          h2 {
+          h3 {
             margin-top: 40px;
             font-family: $font-poppins;
             font-size: 19px;
@@ -323,11 +363,10 @@
     }
 
     &__menu {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      // position: absolute;
+      margin: 50px auto 150px;
       width: 70%;
+
 
       font-family: $font-poppins;
       font-weight: 700;
@@ -337,6 +376,22 @@
         border-top: 1px solid $bgc-color;
         overflow: hidden;
         padding: 16px;
+
+        &--btn {
+          display: flex;
+          justify-content: space-between;
+
+          &:hover {
+            color: $product-color;
+          }
+        }
+
+        &--icon {
+          font-size: 10px;
+          color: rgb(79, 79, 79);
+          display: block;
+          text-align: right;
+        }
 
         &:hover .item--sub-menu {
           max-height: 10em;
@@ -356,6 +411,60 @@
             position: relative;
           }
         }
+      }
+    }
+
+    &__footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &__content {
+      width: 500px;
+      padding: 0 20px 0 20px;
+
+      &--headline {
+        font-family: $font-poppins;
+        font-size: 30px;
+      }
+
+      &--paragraph {
+        font-family: $font-roboto;
+        font-size: 17px;
+        font-weight: 300;
+      }
+    }
+
+    &__download {
+      background-color: $bgc-color;
+      margin: 60px auto;
+      max-width: 1300px;
+      max-height: 120px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &--btn {
+        @include buttonStyle(200px, 60px);
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.9;
+        }
+      }
+    }
+
+    &__text {
+      font-family: $font-roboto;
+      font-size: 17px;
+      font-weight: 300;
+
+      &--bold {
+        font-family: $font-poppins;
+        font-size: 19px;
+        font-weight: 700;
       }
     }
   }

@@ -1,0 +1,7 @@
+@mixin buttonStyle($width, $heigth) {
+   width: $width;
+   height: $heigth;
+   background-color: $product-color;
+   color: #fff;
+   border: none;
+}
