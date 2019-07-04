@@ -24,6 +24,12 @@
       bottom: 0;
       left: 0;
       color: #fff;
+
+      @media (max-width: $phone) {
+         flex-direction: column;
+         justify-content: center;
+         height: 50%;
+      }
    }
 
    &__headline {
@@ -33,6 +39,12 @@
       margin-bottom: 100px;
       width: 25%;
       font-family: $font-poppins;
+
+      @media (max-width: $phone) {
+         font-size: $h2-header;
+         width: 80%;
+         margin: 10px 10px 30px 10px;
+      }
    }
 
    &__paragraph {
@@ -42,6 +54,11 @@
       width: 600px;
       font-family: $font-roboto;
       font-weight: 300;
+
+      @media (max-width: $phone) {
+         font-size: $h2-header-phone;
+         width: 85%;
+      }
    }
 
    &__phone {
@@ -49,6 +66,13 @@
       top: 20px;
       right: 15%;
       z-index: 1;
+
+      @media (max-width: $phone) {
+         width: 300px;
+         top: 90px;
+         right: 15%;
+
+      }
    }
 
    &__download {

@@ -13,12 +13,12 @@
       width: 20%;
 
       h3 {
-        font-size: 30px;
+        font-size: $h2-header;
         font-family: $font-poppins;
       }
 
       p {
-        font-size: 170x;
+        font-size: $paragraph;
         font-family: $font-roboto;
       }
     }
@@ -57,7 +57,7 @@
         h3 {
           margin-top: 40px;
           font-family: $font-poppins;
-          font-size: 19px;
+          font-size: $h3-header;
           font-weight: bold;
 
         }
@@ -65,7 +65,7 @@
         p {
           margin-top: 40px;
           font-family: $font-roboto;
-          font-size: 17px;
+          font-size: $paragraph;
           font-weight: 300;
 
         }

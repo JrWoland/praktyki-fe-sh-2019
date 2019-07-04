@@ -16,13 +16,12 @@
          justify-content: end;
          color: $product-color;
          font-family: $font-poppins;
-         font-size: 70px;
+         font-size: $big-header;
          width: 100%;
 
          &--headline {
-            // display: block;
             margin: 0 0 0 20%;
-            font-size: 70px;
+            font-size: $big-header;
             line-height: 65px;
          }
       }
@@ -84,7 +83,7 @@
          font-family: $font-poppins;
 
          &--headline {
-            font-size: 35px;
+            font-size: $big-headline-phone;
          }
 
       }

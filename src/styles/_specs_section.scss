@@ -20,11 +20,11 @@
 
    &__headline {
       font-family: $font-poppins;
-      font-size: 30px;
+      font-size: $h2-header;
    }
 
    &__paragraph {
-      font-size: 17px;
+      font-size: $paragraph;
    }
 
    &__grow {
@@ -72,7 +72,7 @@
 
       font-family: $font-poppins;
       font-weight: 700;
-      font-size: 17px;
+      font-size: $h4-header;
 
       .item {
          border-top: 1px solid $bgc-color;
@@ -129,12 +129,12 @@
 
       &--headline {
          font-family: $font-poppins;
-         font-size: 30px;
+         font-size: $h2-header;
       }
 
       &--paragraph {
          font-family: $font-roboto;
-         font-size: 17px;
+         font-size: $paragraph;
          font-weight: 300;
       }
    }
@@ -148,6 +148,13 @@
       justify-content: space-around;
       align-items: center;
 
+      @media (max-width: $phone) {
+         flex-direction: column;
+         text-align: center;
+         height: auto;
+         flex-wrap: wrap;
+      }
+
       &--btn {
          @include buttonStyle(200px, 60px);
 
@@ -160,12 +167,17 @@
 
    &__text {
       font-family: $font-roboto;
-      font-size: 17px;
+      font-size: $paragraph;
       font-weight: 300;
+
+      @media (max-width: $phone) {
+         padding: 5px;
+         margin: 10px;
+      }
 
       &--bold {
          font-family: $font-poppins;
-         font-size: 19px;
+         font-size: $h3-header;
          font-weight: 700;
       }
    }
