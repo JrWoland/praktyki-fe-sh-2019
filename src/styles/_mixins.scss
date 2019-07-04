@@ -4,4 +4,12 @@
    background-color: $product-color;
    color: #fff;
    border: none;
+   font-family: $font-roboto;
+   font-size: 17px;
+   font-weight: 300;
+
+   &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+   }
 }

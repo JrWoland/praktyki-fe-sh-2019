@@ -1,0 +1,80 @@
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: $font-roboto;
+
+   &__title {
+      font-size: 17px;
+
+      &__span {
+         margin: 0 40px 0;
+      }
+   }
+
+   .container {
+      margin-top: 20px;
+      width: 65%;
+      background: #fff;
+      padding: 4px;
+
+      &__form {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+
+         @media (max-width: $phone) {
+            flex-direction: column;
+         }
+
+         .item {
+            position: relative;
+            width: 45%;
+            padding: 10px 0 10px;
+
+            @media (max-width: $phone) {
+               width: 100%;
+            }
+
+            &__input {
+               padding: 5px 0 0 0;
+               margin-bottom: 40px;
+               font-size: 30px;
+               width: 100%;
+               box-sizing: border-box;
+               box-shadow: none;
+               outline: none;
+               border: none;
+               border-bottom: 2px dotted #999;
+
+            }
+
+            &__label {
+               position: absolute;
+               top: 20px;
+               left: 0;
+               color: rgb(42, 42, 42);
+               transition: 0.3s;
+               pointer-events: none;
+            }
+
+            &__message {
+               width: 100%;
+            }
+         }
+      }
+
+      input:focus~label,
+      input:valid~label {
+         top: -12px;
+         left: -2px;
+         font-size: 13px;
+         color: rgb(162, 155, 155);
+      }
+   }
+
+   &__send-message {
+      @include buttonStyle(200px, 60px);
+   }
+}
