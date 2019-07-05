@@ -37,11 +37,11 @@
       <nav class="work-place-nav">
         <ul class="work-place-nav__menu">
           <li class="work-place-nav__item-list">zonifero WorkPlace:</li>
-          <li class="work-place-nav__item-list">Overview</li>
-          <li class="work-place-nav__item-list">Features</li>
-          <li class="work-place-nav__item-list">Specs</li>
-          <li class="work-place-nav__item-list">FAQ</li>
-          <li class="work-place-nav__item-list">Contact</li>
+          <li class="work-place-nav__item-list"><a href="#for-who">Overview</a></li>
+          <li class="work-place-nav__item-list"><a href="#features">Features</a></li>
+          <li class="work-place-nav__item-list"><a href="#specs">Specs</a></li>
+          <li class="work-place-nav__item-list"><a href="#footer">FAQ</a></li>
+          <li class="work-place-nav__item-list"><a href="#form">Contact</a></li>
         </ul>
       </nav>
   </header>
@@ -64,7 +64,7 @@
       </div>
     </section>
 
-    <section class="for-who">
+    <section class="for-who" id="for-who">
       <div class="for-who__info">
         <div class="for-who__info--width">
           <h3 class="for-who__cards-headers">Managment</h3>
@@ -125,7 +125,7 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="features__image">
         <img class="features__phone" src="public/img/Silver.png" alt="">
       </div>
@@ -139,7 +139,7 @@
       <a class="features__download" href="#">View and download full specs</a>
     </section>
 
-    <section class="specs">
+    <section class="specs" id="specs">
       <div class="specs__head">
         <div class="specs__info specs__grow">
           <h2 class="specs__headline">Room booking</h2>
@@ -261,18 +261,18 @@
         <button class="specs__text specs__download--btn">Download</button>
       </div>
     </section>
-    <section class="form">
+    <section class="form" id="form">
       <div class="form__title"> <span class="form__title__span">Contact form</span> <span class="form__title__span">Call
           us</span> </div>
       <div class="container">
         <form class="container__form">
           <div class="item item__name">
             <input class="item__input" type="" name="" required="">
-            <label class="item__label">First name</label>
+            <label class="item__label">First name<span class="item__label--color"> *</span></label>
           </div>
           <div class="item item__family-name">
             <input class="item__input" type="text" name="" required="">
-            <label class="item__label">Family name</label>
+            <label class="item__label">Family name<span class="item__label--color"> *</span></label>
           </div>
           <div class="item item__tel">
             <input class="item__input" type="tel" name="" required="">
@@ -280,11 +280,11 @@
           </div>
           <div class="item item__email">
             <input class="item__input" type="text" name="" required="">
-            <label class="item__label">Your email</label>
+            <label class="item__label">Your email<span class="item__label--color"> *</span></label>
           </div>
           <div class="item item__message">
             <input class="item__input" type="text" name="" required="">
-            <label class="item__label">Message</label>
+            <label class="item__label">Message<span class="item__label--color"> *</span></label>
           </div>
         </form>
       </div>
@@ -292,7 +292,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer-container">
       <ul class="footer-container__list">
         <h4 class="footer-container__list-headline">Products:</h4>
