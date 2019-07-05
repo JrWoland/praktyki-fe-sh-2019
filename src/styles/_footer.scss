@@ -1,0 +1,47 @@
+.footer {
+   margin-top: 100px;
+   width: 100%;
+   min-height: 50vh;
+   background-color: $product-color;
+}
+
+.footer-container {
+   display: flex;
+   justify-content: start;
+   align-content: center;
+   color: #fff;
+   width: 50%;
+   padding: 50px 0 100px 0;
+   font-family: $font-roboto;
+
+   @media (max-width: $phone) {
+      flex-direction: column;
+      margin-left: 40px;
+      align-content: center;
+      justify-content: center;
+   }
+
+   &__list {
+      margin: 10px 0 0 150px;
+
+      @media (max-width: $phone) {
+         margin: 0;
+         width: 100%;
+      }
+   }
+
+   &__list-headline {
+      font-family: $font-poppins;
+      font-weight: 700;
+   }
+
+   &__list-item {
+      padding: 5px 0 5px 0;
+   }
+
+   &__link {
+      color: #fff;
+      font-family: $font-roboto;
+      font-weight: 300;
+   }
+}

@@ -36,25 +36,19 @@
       }
    }
 
-
    &__logo {
       margin-top: 0px;
       justify-content: center;
       align-items: center;
       margin-left: 68px;
 
-
       @media (max-width: $phone) {
-         // display: none;
          margin-left: 8px;
-
 
          &--png {
             width: 115px;
          }
       }
-
-
    }
 
    &__menu {
@@ -66,47 +60,50 @@
          display: none;
       }
 
-      .products {
+      .list {
          margin-top: 50px;
          display: flex;
          list-style: none;
          font-size: $paragraph-small;
          font-family: $font-roboto;
 
-         .product {
+         &__item {
             padding: 0 30px 0 30px;
 
             &--sign {
                padding: 0 30px 0 30px;
                font-size: 17px;
                font-weight: 700;
-
             }
 
             &--icon {
-               padding: 0 4px 0;
+               padding: 0 5px 0;
             }
          }
-
       }
 
       .button-sign {
-
+         width: 280px;
+         height: 80px;
          font-size: 17px;
+         color: #fff;
+         background-color: $product-color;
+         border: none;
+         padding: 47px 80px 16px 0;
 
-         button {
-            color: #fff;
-            background-color: $product-color;
-            border: none;
-            padding: 47px 80px 16px 57px;
-            width: 280px;
-            height: 80px;
+         &:hover {
+            cursor: pointer;
+            opacity: 0.9;
          }
       }
    }
 }
 
 .work-place-nav {
+   @media (max-width: $phone) {
+      display: none;
+   }
+
    display: flex;
    justify-content: center;
    align-items: center;
@@ -116,10 +113,6 @@
    font-size: 17px;
    height: 120px;
 
-   @media (max-width: $phone) {
-      display: none;
-   }
-
    &__menu {
       display: flex;
       margin-right: 200px;
@@ -127,10 +120,10 @@
       left: 0;
       padding: 0;
       list-style: none;
+   }
 
-      li {
-         display: block;
-         padding: 0 30px 0 30px;
-      }
+   &__item-list {
+      display: block;
+      padding: 0 30px 0 30px;
    }
 }

@@ -4,7 +4,7 @@
       background-color: $bgc-color;
       display: grid;
       grid-template-columns: 3fr 2fr;
-      grid-template-rows: 13r 2fr;
+      grid-template-rows: 2fr 2fr;
       grid-template-areas:
          "title img"
          "parag img";
@@ -12,7 +12,8 @@
       &__title {
          grid-area: title;
          display: flex;
-         align-items: center;
+         align-items: flex-end;
+         margin-bottom: 50px;
          justify-content: end;
          color: $product-color;
          font-family: $font-poppins;
@@ -35,16 +36,17 @@
 
          &--desks {
             position: absolute;
-            top: 40%;
-            left: 0%;
+            bottom: 5%;
+            left: -2%;
             width: 40vw;
          }
 
          &--hand {
             position: absolute;
-            top: 18%;
-            left: 5%;
-            width: 450px;
+            bottom: -80px;
+            left: 50px;
+            width: 30vw;
+            min-width: 460px;
          }
       }
 
@@ -52,9 +54,9 @@
          grid-area: parag;
          color: black;
          margin: 0 0 0 20%;
-
-         font-size: 20px;
-         line-height: 22px;
+         width: 70%;
+         font-size: $h2-header;
+         line-height: $h2-header;
          font-family: $font-roboto;
 
          .app-btn {
@@ -63,7 +65,6 @@
             width: 210px;
             margin: 10px;
          }
-
       }
    }
 
@@ -78,14 +79,13 @@
       &__title {
          margin-top: 50px;
          padding: 20px;
-         width: 80vw;
+         width: fit-content;
          color: $product-color;
          font-family: $font-poppins;
 
          &--headline {
             font-size: $big-headline-phone;
          }
-
       }
 
       &__images {
@@ -98,7 +98,6 @@
             position: absolute;
             width: 105%;
             bottom: -10%;
-
          }
 
          &--hand {
@@ -114,7 +113,7 @@
          flex-wrap: wrap;
          justify-content: center;
          color: black;
-         padding: 16px;
+         padding: 13px;
          font-size: 20px;
          line-height: 22px;
          font-family: $font-roboto;
@@ -124,9 +123,6 @@
             width: 140px;
             margin: 10px;
          }
-
       }
-
    }
-
 }

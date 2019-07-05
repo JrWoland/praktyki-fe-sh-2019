@@ -9,19 +9,35 @@
     max-width: 70%;
     min-height: 165px;
 
-    &--more {
-      width: 20%;
+    @media (max-width: $phone) {
+      max-width: 90%;
+      justify-content: center;
+      margin: auto;
 
-      h3 {
-        font-size: $h2-header;
-        font-family: $font-poppins;
-      }
-
-      p {
-        font-size: $paragraph;
-        font-family: $font-roboto;
+      .display-none {
+        display: none;
       }
     }
+
+    &--width {
+      width: 20%;
+
+      @media (max-width: $phone) {
+        width: 100%;
+        justify-content: stretch;
+      }
+
+    }
+  }
+
+  &__cards-headers {
+    font-size: $h2-header;
+    font-family: $font-poppins;
+  }
+
+  &__cards-paragraphs {
+    font-size: $paragraph;
+    font-family: $font-roboto;
   }
 
   &__cards {
@@ -59,7 +75,6 @@
           font-family: $font-poppins;
           font-size: $h3-header;
           font-weight: bold;
-
         }
 
         p {
@@ -67,7 +82,6 @@
           font-family: $font-roboto;
           font-size: $paragraph;
           font-weight: 300;
-
         }
       }
     }

@@ -15,16 +15,16 @@
     <nav class="fixed-nav">
       <div class="fixed-nav__logo"> <img src="public/img/logo.png" alt="" class="fixed-nav__logo--png"></div>
       <div class="fixed-nav__menu">
-        <ul class="products">
-          <li class="product">Zonifero products:</li>
-          <li class="product">Store</li>
-          <li class="product">Blog</li>
-          <li class="product"><i class="fas fa-globe-europe product--icon"></i><i
-              class="fas fa-chevron-down product--icon"></i></li>
-          <li class="product--sign">Sign in</li>
+        <ul class="list">
+          <li class="list__item">Zonifero products:</li>
+          <li class="list__item">Store</li>
+          <li class="list__item">Blog</li>
+          <li class="list__item"><i class="fas fa-globe-europe list__item--icon"></i><i
+              class="fas fa-chevron-down list__item--icon"></i></li>
+          <li class="list__item--sign">Sign in</li>
         </ul>
-        <div class="button-sign">
-          <button>Get the app</button>
+        <div class="button-container">
+          <button class="button-sign">Get the app</button>
         </div>
       </div>
       <div class="fixed-nav__mobile fixed-nav__mobile--title">
@@ -36,12 +36,12 @@
     <header>
       <nav class="work-place-nav">
         <ul class="work-place-nav__menu">
-          <li>zonifero WorkPlace:</li>
-          <li>Overview</li>
-          <li>Features</li>
-          <li>Specs</li>
-          <li>FAQ</li>
-          <li>Contact</li>
+          <li class="work-place-nav__item-list">zonifero WorkPlace:</li>
+          <li class="work-place-nav__item-list">Overview</li>
+          <li class="work-place-nav__item-list">Features</li>
+          <li class="work-place-nav__item-list">Specs</li>
+          <li class="work-place-nav__item-list">FAQ</li>
+          <li class="work-place-nav__item-list">Contact</li>
         </ul>
       </nav>
     </header>
@@ -66,20 +66,23 @@
 
       <section class="for-who">
         <div class="for-who__info">
-          <div class="for-who__info--more">
-            <h3>Managment</h3>
-            <p>Tools for real-time management of all your facilities and people across multiple sites. Ease, speed and
+          <div class="for-who__info--width">
+            <h3 class="for-who__cards-headers">Managment</h3>
+            <p class="for-who__cards-paragraphs">Tools for real-time management of all your facilities and people across
+              multiple sites. Ease, speed and
               effectiveness of facilities communications.
             </p>
           </div>
-          <div class="for-who__info--more">
-            <h3>Employees</h3>
-            <p>Improved productivity and satisfaction as your employees stay informed, connected and can feed requests
+          <div class="for-who__info--width display-none">
+            <h3 class="for-who__cards-headers">Employees</h3>
+            <p class="for-who__cards-paragraphs">Improved productivity and satisfaction as your employees stay informed,
+              connected and can feed requests
               and updates in real time</p>
           </div>
-          <div class="for-who__info--more">
-            <h3>Visitors</h3>
-            <p>A smooth and welcoming visitor experience – easy navigation around your facilities.
+          <div class="for-who__info--width display-none">
+            <h3 class="for-who__cards-headers">Visitors</h3>
+            <p class="for-who__cards-paragraphs">A smooth and welcoming visitor experience – easy navigation around your
+              facilities.
             </p>
           </div>
         </div>
@@ -289,7 +292,31 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <ul class="footer-container__list">
+          <h4 class="footer-container__list-headline">Products:</h4>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">zonifero business</a></li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">zonifero real estate</a>
+          </li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">zonifero lobby</a></li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">zonifero services</a></li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">zonifero tv</a></li>
+        </ul>
+        <ul class="footer-container__list">
+          <h4 class="footer-container__list-headline">Resources:</h4>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">Documentation</a></li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">FAQ</a></li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">Blog</a></li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">Media</a></li>
+        </ul>
+        <ul class="footer-container__list">
+          <h4 class="footer-container__list-headline">About:</h4>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">About us</a></li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">Company</a></li>
+          <li class="footer-container__list-item"><a class="footer-container__link" href="#">Blog</a></li>
+        </ul>
+      </div>
     </footer>
 
   </div>
