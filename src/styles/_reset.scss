@@ -11,6 +11,14 @@ a {
    text-decoration: none;
 }
 
+main {
+   margin-top: 160px;
+
+   @media (max-width: $phone) {
+      margin-top: 0;
+   }
+}
+
 ul,
 li {
    list-style: none;

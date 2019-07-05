@@ -19,6 +19,10 @@
       background: #fff;
       padding: 4px;
 
+      @media (max-width: $phone) {
+         width: 90%;
+      }
+
       &__form {
          display: flex;
          flex-wrap: wrap;
